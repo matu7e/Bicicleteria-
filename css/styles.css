@@ -138,6 +138,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* Changed repeat value for better responsiveness */
     margin: 0 100px;
+}
 
 .card-prod {
     width: 200px;
@@ -150,6 +151,11 @@ nav {
     width: 180px;
     height: 180px;
     margin: auto;
+}
+
+.product-img:hover{
+   
+
 }
 
 .desc-product-btn {
@@ -183,4 +189,9 @@ nav {
     .contend-card-product {
         grid-template-columns: 1fr; /* Display a single column for smaller screens */
     }
+}
+
+.carrito{
+    text-decoration: none;
+    color: #ffffff;
 }
