@@ -62,172 +62,201 @@ nav {
 }
 
 #active{
-    background-color: rgba(20, 27, 26, 0.5);
+  background-color: rgba(20, 27, 26, 0.5);
 }
 
+.contenedor-local-presentacion{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
 
-.carousel-section {
-    width: 100%;
-    
-
-    
+}
+.img-local{
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
 }
 
-.carousel {
-    position: relative;
-    overflow: hidden;
+.contetenedor-titulo-img{
+  text-align: center;
+  margin: 60px;
+}
+.contetenedor-titulo-img h2{
+  font-size: 35px;
+  margin-top: 50px;
+}
+.contetenedor-titulo-img p{
+  font-size: 20px;
+  margin-top: 50px;
 }
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.contenedor-btn-wpp{
+  margin: 60px;
+  margin-top: 100px;
 }
 
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel img {
-    width: 100%;
-    height: 450px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    object-fit: cover;
-    border-bottom: 1px solid #70c041;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    background: none;
-    border: none;
+.whatsapp-button{
+  
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
     cursor: pointer;
-    color: #70c041;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 50px;
 }
 
-.carousel-control.prev {
-    left: 10px;
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cambia el color al pasar el ratón */
 }
 
-.carousel-control.next {
-    right: 10px;
+.whatsapp-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
+
+
+
+
+
+.parrafo{
+  margin: 50px;
+}
+.parrafo h2{
+  font-size: 35px;
+  
+
+}
+.parrafo p{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+
 
 
 .descritcion-title{
 
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    display: flex;
-    
+  width: auto;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  margin: 0 100px;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  
 
 }
 .descritcion-title, h2{
 
-    
-    margin: auto;
-    font-size: 40px;
-    color: #70c041;
-
-}
-
-.contend-card-product {
-    border-top: 1px solid #70c041;
-    height: 800px;
-    
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Changed repeat value for better responsiveness */
-    margin: 0 100px;
-}
-
-.card-prod {
-    width: 200px;
-    height: 300px;
-    margin: 20px; /* Adjusted margin for better spacing */
-    border: 3px solid #ffffff;
-}
-
-.product-img {
-    width: 180px;
-    height: 180px;
-    margin: auto;
-}
-
-.product-img:hover{
-   
-
-}
-
-.desc-product-btn {
-    text-align: center;
-}
-
-.desc-product {
-    font-size: 20px;
-    padding: 15px;
-    background-color: #ffffff;
-}
-
-.content-btn {
-    background-color: #70c041;
-    padding: 15px;
-}
-
-@media (max-width: 1200px) {
-    .contend-card-product {
-        grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns for smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .contend-card-product {
-        grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns for even smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .contend-card-product {
-        grid-template-columns: 1fr; /* Display a single column for smaller screens */
-    }
-}
-
-.carrito{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.content-buton{
-    width: 100%;
-    text-align: center;
-    padding : 50px 0;
-}
-
-.mostrar-mas-btn {
-    display: inline-block;
-    background-color: #4CAF50; /* Color de fondo */
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    
-  }
   
-  .mostrar-mas-btn:hover {
-    background-color: #45a049; /* Cambia el color al pasar el mouse */
-  }
+  margin: auto;
+  font-size: 40px;
+  color: #70c041;
+
+}
+
+/* Estilos para el contenedor principal */
+.contactanos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Estilos para el formulario */
+.formulario {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.formulario h2 {
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el mapa */
+iframe {
+  width: 98%;
   
+  height: 92%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Estilo para el espacio entre los elementos */
+.form-container {
+  margin: 20px;
+}
 
 
-/*------------------------ FOOTER ----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer {
@@ -240,33 +269,33 @@ footer {
     padding: 20px;
     
    
-  }
+}
   
-  footer a {
+footer a {
     color: rgb(0, 0, 0);
     margin: 20px;
-  }
-  footer a:hover {
+}
+footer a:hover {
     color: rgb(255, 255, 255);
-  }
+}
  
-  .left{
+.left{
+    margin: auto;
+}
+.right{
     margin: auto;
   }
-  .right{
-    margin: auto;
-  }
-  .center {
+.center {
     flex-grow: 1;
     text-align: center;
     color: rgb(0, 0, 0);
   }
-  footer div a{
+footer div a{
     font-size: 20px;
     
   }
 
-  .icon {
+.icon {
 	display: inline-flex;
 	width: 30px;
     height: 30px;
@@ -275,8 +304,8 @@ footer {
 	border-radius: 50%;
 	transition-property: outline-offset, outline-color, background-color;
 	transition-duration: 0.25s;
-    font-size: 22px;
-}
+  font-size: 22px;
+}  
 .icon:hover {
 	outline-offset: 4px;
 }
@@ -291,7 +320,6 @@ footer {
     
 
 }
-
 
 .icon--instagram:hover {
 	background-image: radial-gradient(
@@ -338,4 +366,3 @@ footer {
 		transform: rotate(-15deg);
 	}
 }
-/*------------------- FIN DEL FOOTER ---------------------------*/
